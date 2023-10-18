@@ -206,7 +206,7 @@ function App() {
     Swal.fire({
       title: 'Error',
       icon: 'error',
-      text: 'La materia no esta registrada',
+      text: 'La materia no esta registrada, favor de ingresar Cve Plan y Clave',
     });
   }
 } catch (error) {

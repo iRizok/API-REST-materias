@@ -114,6 +114,8 @@ body {
   bottom: 0;
   width: 100%;
 }
+
+/* Estilos para el formulario */
 /* Estilos para el formulario */
 .form-container {
   background-color: #333; /* Fondo gris oscuro */
@@ -121,6 +123,7 @@ body {
   padding: 20px; /* Espaciado interno */
   border-radius: 8px; /* Esquinas redondeadas */
   margin-bottom: 20px; /* Margen inferior para separar de otros elementos */
+  width: 100%; /* Ancho del 100% por defecto */
 }
 
 .form-group {
@@ -140,5 +143,52 @@ body {
   border-radius: 4px;
 }
 
-/* Resto de tu CSS */
+/* Media Query para dispositivos más pequeños como teléfonos móviles */
+@media (max-width: 767px) {
+  .form-container {
+    padding: 15px; /* Reducir el espaciado para pantallas más pequeñas */
+  }
+  
+  .form-control {
+    width: calc(100% - 16px); /* Ajustar el ancho del campo de texto para pantallas más pequeñas */
+  }
+}
 
+/* Media Query para tabletas y dispositivos medianos */
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-container {
+    padding: 18px; /* Ajustar el espaciado para tabletas */
+  }
+}
+
+/* Media Query para pantallas de escritorio */
+@media (min-width: 992px) {
+  .form-container {
+    padding: 20px; /* Restaurar el espaciado para pantallas más grandes si es necesario */
+  }
+}
+
+
+/* fin del formulario */
+
+/* Estilos para la tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 10px; /* Aumentar el espaciado dentro de las celdas */
+  text-align: center;
+}
+
+/* Media Query para hacer la tabla responsiva */
+@media (max-width: 767px) {
+  .table th,
+  .table td {
+    padding: 8px;
+    font-size: 0.9em; /* Reducir el tamaño del texto en pantallas más pequeñas */
+  }
+}
