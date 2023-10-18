@@ -116,7 +116,7 @@ body {
 }
 
 /* Estilos para el formulario */
-/* Estilos para el formulario */
+
 .form-container {
   background-color: #333; /* Fondo gris oscuro */
   color: #ffffff; /* Texto blanco */
@@ -190,5 +190,31 @@ body {
   .table td {
     padding: 8px;
     font-size: 0.9em; /* Reducir el tamaño del texto en pantallas más pequeñas */
+  }
+}
+
+/* Estilos para el apartado de derechos reservados */
+.derechos-reservados {
+  display: block; /* Por defecto, mostrar el apartado de derechos reservados */
+}
+
+/* Media Query para dispositivos más pequeños como teléfonos móviles */
+@media (max-width: 767px) {
+  .derechos-reservados {
+    display: none; /* Ocultar el apartado de derechos reservados en pantallas más pequeñas */
+  }
+}
+
+/* Media Query para tabletas y dispositivos medianos */
+@media (min-width: 768px) and (max-width: 991px) {
+  .derechos-reservados {
+    display: block; /* Mostrar el apartado de derechos reservados en tabletas y dispositivos medianos */
+  }
+}
+
+/* Media Query para pantallas de escritorio */
+@media (min-width: 992px) {
+  .derechos-reservados {
+    display: block; /* Mostrar el apartado de derechos reservados en pantallas de escritorio */
   }
 }
