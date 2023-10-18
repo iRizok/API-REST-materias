@@ -114,3 +114,31 @@ body {
   bottom: 0;
   width: 100%;
 }
+/* Estilos para el formulario */
+.form-container {
+  background-color: #333; /* Fondo gris oscuro */
+  color: #ffffff; /* Texto blanco */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Esquinas redondeadas */
+  margin-bottom: 20px; /* Margen inferior para separar de otros elementos */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: calc(100% - 20px); /* Ancho del 100% menos el padding interno */
+  padding: 10px;
+  background-color: #555; /* Fondo gris más oscuro */
+  color: #ffffff;
+  border: 1px solid #777; /* Borde gris */
+  border-radius: 4px;
+}
+
+/* Resto de tu CSS */
+
